@@ -19,4 +19,13 @@ while continuer:
     for event in pygame.event.get():
         if event.type == QUIT:
             continuer = 0
+        if event.type == KEYDOWN:
+            if event.key == K_DOWN:
+                position_perso = position_perso.move(0,y)#a completer
+            if event.key == K_UP:
+                position_perso = position_perso.move(0,-y)# a completer
+            if event.key == K_Left:
+                position_perso = position_perso.move(-x,0)# a completer
+            if event.key == K_RIGHT:
+                position_perso = position_perso.move(x,O) # a completer
 
